@@ -1,0 +1,15 @@
+.message-user {
+  grid-area: message;
+  border-right: solid 1px $lightgrey;
+  margin-bottom: 50px;
+}
+
+.user-search,
+.message {
+  width: 100%;
+}
+
+.send {
+  width: 100%;
+  background: $amethyst;
+}

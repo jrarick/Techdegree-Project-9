@@ -1,0 +1,27 @@
+.main-nav {
+  background: $eggplant;
+  grid-area: nav;
+}
+
+.nav-ul {
+  padding: 0;
+  @include flexy($direction: column, $justify: space-between);
+  align-items: center;
+}
+
+.link {
+  padding: 25px 33px;
+}
+
+.nav-icon:hover .st0,
+.nav-icon:focus .st0 {
+  fill: $white;
+  transition: .5s ease;
+}
+
+.hovered-logo {
+  border-left: 3px solid $greenapple;
+  border-radius: 3px;
+  padding-left: 30px;
+  transition: .5s ease;
+}

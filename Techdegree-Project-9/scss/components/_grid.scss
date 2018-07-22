@@ -1,0 +1,32 @@
+body {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  grid-template-rows: 60px repeat(10, auto);
+  grid-template-areas:
+  'header header'
+  'nav dashboard'
+  'nav traffic'
+  'nav daily'
+  'nav mobile'
+  'nav social'
+  'nav members'
+  'nav activity'
+  'nav message'
+  'nav settings';
+  @media #{$desktop} {
+    grid-template-columns: 100px repeat(2, 1fr);
+    grid-template-rows: 80px repeat(6, auto);
+    grid-template-areas:
+    'header header header'
+    'nav dashboard dashboard'
+    'nav traffic traffic'
+    'nav daily mobile'
+    'nav social social'
+    'nav members activity'
+    'nav message settings';
+  }
+}
+
+.main-content-container {
+  padding: 15px 25px;
+}

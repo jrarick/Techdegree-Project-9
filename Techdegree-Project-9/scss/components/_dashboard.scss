@@ -1,0 +1,40 @@
+.dashboard {
+  grid-area: dashboard;
+  padding-bottom: 0;
+}
+
+.subheader-div {
+  @include flexy($direction: row, $justify: space-between);
+  padding-bottom: 20px;
+  border-bottom: solid 1px $lightgrey;
+}
+
+.alert {
+  background: $amethyst;
+  color: $white;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 0;
+}
+
+.search-dashboard {
+  width: 30%;
+  transition: .7s ease-in-out;
+  &:focus {
+    width: 40%;
+  }
+}
+
+.close-alert {
+  float: right;
+  font-weight: bold;
+  padding-left: 3px;
+  padding-right: 3px;
+  transition: .7s;
+  &:hover {
+    cursor: pointer;
+    color: $amethyst;
+    background: $white;
+    border-radius: 5px;
+  }
+}
