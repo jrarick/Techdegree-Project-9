@@ -1,0 +1,41 @@
+.main-header {
+  background: $amethyst;
+  grid-area: header;
+}
+
+.main-logo {
+  margin: 20px;
+  font-size: $font-size--large;
+}
+
+.main-header,
+.account-div,
+.avi {
+  @include flexy($direction: row, $justify: space-between);
+  align-items: center;
+}
+
+.bell {
+  display: inline-block;
+  position: relative;
+}
+
+.notification-circle {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: $greenapple;
+  position: absolute;
+  top: 17px;
+  right: 18px;
+}
+
+.vl {
+  border-left: 2px solid $grape;
+  height: 50px;
+}
+
+.account-link {
+  padding: 20px;
+  align-items: center;
+}
